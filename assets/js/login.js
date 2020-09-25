@@ -92,6 +92,8 @@ $(function() {
                     window.localStorage.setItem("token", info.token);
                     // 跳转到主页面
                     location.href = "../../index.html"
+                } else {
+                    layer.msg("用户名或密码错误！")
                 }
             }
         })
